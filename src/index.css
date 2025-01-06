@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Athletics";
+  font-weight: 600;
+  src: url("/fonts/Athletics/Athletics-Bold.otf");
+}
+
+/* .gradient-border {
+  border: 0.5px solid transparent; 
+  border-image: linear-gradient(to right, #9B5CFF, #FFE074, #50CAE4);
+  border-image-slice: 1;
+  border-radius: 50px;
+} */
+
+.gradient-border {
+  position: relative;
+  background: linear-gradient(to right, #9B5CFF, #FFE074, #50CAE4);
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.gradient-button {
+  background: linear-gradient(to right, #9B5CFF, #FFE074, #50CAE4);
+  color: white; /* Text color */
+  padding: 10px 20px; /* Adjust padding */
+  border: none; /* Remove default border */
+  border-radius: 8px; /* Adjust rounded corners */
+  cursor: pointer; /* Pointer cursor for buttons */
+  font-size: 16px; /* Font size */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.gradient-button:hover {
+  opacity: 0.9; /* Slight transparency on hover */
+  transform: scale(1.05); /* Subtle scaling effect */
+}
+
+.gradient-border-inner {
+  background: #000; 
+  padding: 5px;
+  border-radius: 6px;
+}
+
+
+.gradient-text {
+  background-image: linear-gradient(to right, #9B5CFF, #FFE074, #50CAE4); 
+  -webkit-background-clip: text;  /* This clips the background to the text */
+  color: transparent;  /* Make the text color transparent so the gradient shows through */
+}
+
+.gradient-icon {
+  background: linear-gradient(to right, #9B5CFF, #FFE074, #50CAE4);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.gradient-icon svg {
+  fill: url(#gradient-fill);
+}
+
+
+@font-face {
+  font-family: "Athletics";
+  font-weight: 500;
+  src: url("/fonts/Athletics/Athletics-Regular.otf");
+}
+
+
+@font-face {
+  font-family: "Athletics";
+  src: url("/fonts/Athletics/Athletics-Medium.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Athletics";
+  src: url("/fonts/Athletics/Athletics-Light.otf");
+  font-weight: 300;
+}
